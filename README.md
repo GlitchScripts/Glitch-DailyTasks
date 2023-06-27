@@ -2,8 +2,8 @@
 This is Glitch's daily tasks script (and my very first foray into GitHub and KoLmafia)
 
 It performs:
-* Clip Art creations
 * "breakfast"
+* Clip Art creations
 * Simple dietary tasks
 * Consult skillbook attempts
 

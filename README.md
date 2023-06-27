@@ -17,5 +17,11 @@ git checkout https://github.com/GlitchScripts/Glitch-DailyTasks main
 ```
 Will require [a recent build of KoLMafia](http://builds.kolmafia.us/job/Kolmafia/lastSuccessfulBuild/).
 
+## Removal
+Run this command in the graphical CLI:
+```
+git delete GlitchScripts-Glitch-DailyTasks-main
+```
+
 ## Usage
 Just enter `_G-DAILYTASKS` into the gCLI.  It will do the rest.

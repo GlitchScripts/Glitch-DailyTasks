@@ -1,4 +1,4 @@
-// Glitch's Custom Daily Tasks Automation
+// Glitch's Daily Tasks Script
 //
 // ***************************
 //        Notes       	     *
@@ -6,33 +6,23 @@
 // This is just for aftercore
 // Moved this to GitHub as a test on 2023-06-27
 
+
 void main() {
 	print("Starting Glitch's Daily Tasks...", "purple");
 
 
 	print("Creating Clip Art", "green");
 	wait(1);
-		cli_execute("create 1 bucket of wine");
-		cli_execute("create 1 borrowed time");
-		cli_execute("create 1 box of Familiar Jacks");
+		if (cli_execute("create 1 bucket of wine")) {}
+		if (cli_execute("create 1 borrowed time")) {}
+		if (cli_execute("create 1 box of Familiar Jacks")) {}
 	print("Clip Art created", "blue");
 
 
-	print("Running breakfast", "green");
+	print("Starting breakfast", "green");
 	wait(1);
-   		cli_execute("breakfast");
+   		if (cli_execute("breakfast")) {}
 	print("Breakfast finished", "blue");
-
-// NOTE - this is no longer optimal if I'm running GARBO
-	//print("Creating Mu Familiar Gear in...", "green");
-	//wait(1);
-		//use_familiar($familiar[Mu]);
-		//use(1, $item[box of Familiar Jacks]);
-	//print("Mu Familiar Gear created for today!", "blue");
-	
-// NOTES HERE
-// luck incense gives +10 to Familiar Weight and +25% Item Drops from Monsters
-// tiny stillsuit gives +5 to Familiar Weight, +1 Familiar Experience Per Combat, +10 to Familiar Damage
 
 
 	print("Starting daily diet in...", "green");
@@ -47,27 +37,40 @@ void main() {
 
 	print("Trying to get free Consult skillbook in...", "green");
 	wait(1);
-		cli_execute("fortune NDY [salt batman thick]");
+		if (cli_execute("fortune NDY [salt batman thick]")) {}
 	wait(1);
-		cli_execute("fortune NDY [salt batman thick]");
+		if (cli_execute("fortune NDY [salt batman thick]")) {}
 	wait(1);
-		cli_execute("fortune NDY [salt batman thick]");
+		if (cli_execute("fortune NDY [salt batman thick]")) {}
 	wait(1);
 	print("Free skillbook attempted for today!", "blue");
-
-# Seems like the muscle books only drop from the first consult,
-# mys books only drop from the second consult,
-# and mox books only from the third consult.
-# Also, they only drop on successful matchings.
-
 
 
 	print("Using once-per-day skills", "green");
 	wait(1);
-		cli_execute("cast Acquire Rhinestones");
-		cli_execute("cast Lunch Break");
-		cli_execute("cast Summon Holiday Fun!");
+		if (cli_execute("cast Acquire Rhinestones")) {}
+		if (cli_execute("cast Lunch Break")) {}
+		if (cli_execute("cast Summon Holiday Fun!")) {}
 	print("Done!", "blue");
 
+
+// NOTE: currently allowing garbo to handle this and no longer creating one or the other manually
+	//print("Creating familiar gear in...", "green");
+	//wait(1);
+		//use_familiar($familiar[Mu]);
+		//use(1, $item[box of Familiar Jacks]);
+	//print("Luck Incense created for today!", "blue");
+
+	//print("Creating familiar gear in...", "green");
+	//wait(1);
+		//use_familiar($familiar[Cornbeefadon]);
+		//use(1, $item[box of Familiar Jacks]);
+	//print("Amulet Coin created for today!", "blue");
+
+
+// Familiar Gear Notes:
+// amulet coin gives +10 to Familiar Weight and +50% Meat from Monsters
+// luck incense gives +10 to Familiar Weight and +25% Item Drops from Monsters
+// tiny stillsuit gives +5 to Familiar Weight, +1 Familiar Experience Per Combat, +10 to Familiar Damage
 
 }

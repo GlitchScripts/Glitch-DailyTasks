@@ -24,4 +24,4 @@ git delete GlitchScripts-Glitch-DailyTasks-main
 ```
 
 ## Usage
-Just enter `_G-DAILYTASKS` into the gCLI.  It will do the rest.
+Select the `_G-DAILYTASKS` entry from the scripts drop-down menu, or enter `_G-DAILYTASKS` into the gCLI.

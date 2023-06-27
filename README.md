@@ -15,7 +15,7 @@ Run this command in the graphical CLI:
 ```
 git checkout https://github.com/GlitchScripts/Glitch-DailyTasks main
 ```
-Will require [a recent build of KoLMafia](http://builds.kolmafia.us/job/Kolmafia/lastSuccessfulBuild/).
+It will require a [recent build of KoLMafia](https://github.com/kolmafia/kolmafia/releases).
 
 ## Removal
 Run this command in the graphical CLI:

@@ -7,10 +7,10 @@
 // Moved this to GitHub as a test on 2023-06-27
 
 void main() {
-	print("Starting Glitch's Custom Daily Tasks Automation", "purple");
+	print("Starting Glitch's Daily Tasks...", "purple");
 
 
-	print("Creating Clip Art in...", "green");
+	print("Creating Clip Art", "green");
 	wait(1);
 		cli_execute("create 1 bucket of wine");
 		cli_execute("create 1 borrowed time");
@@ -18,8 +18,8 @@ void main() {
 	print("Clip Art created", "blue");
 
 
-	print("Running breakfast in...", "green");
-	wait(3);
+	print("Running breakfast", "green");
+	wait(1);
    		cli_execute("breakfast");
 	print("Breakfast finished", "blue");
 

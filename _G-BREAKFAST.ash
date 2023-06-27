@@ -1,28 +1,20 @@
-// Glitch's Custom Daily Deeds Automation
-
-// ***************************
-//          To Do            *
-// ***************************
-
-// Future wish-list here
-
+// Glitch's Custom Daily Tasks Automation
+//
 // ***************************
 //        Notes       	     *
 // ***************************
-
 // This is just for aftercore
-// Last updated 2020-12-31
-
+// Moved this to GitHub as a test on 2023-06-27
 
 void main() {
-	print("Starting Glitch's Custom Daily Deeds Automation", "purple");
+	print("Starting Glitch's Custom Daily Tasks Automation", "purple");
 
 
 	print("Creating Clip Art in...", "green");
 	wait(1);
 		cli_execute("create 1 bucket of wine");
-		cli_execute("create 1 box of Familiar Jacks");
 		cli_execute("create 1 borrowed time");
+		cli_execute("create 1 box of Familiar Jacks");
 	print("Clip Art created", "blue");
 
 
@@ -31,12 +23,16 @@ void main() {
    		cli_execute("breakfast");
 	print("Breakfast finished", "blue");
 
-
-	print("Creating Mu Familiar Gear in...", "green");
-	wait(1);
-		use_familiar($familiar[Mu]);
-		use(1, $item[box of Familiar Jacks]);
-	print("Mu Familiar Gear created for today!", "blue");
+// NOTE - this is no longer optimal if I'm running GARBO
+	//print("Creating Mu Familiar Gear in...", "green");
+	//wait(1);
+		//use_familiar($familiar[Mu]);
+		//use(1, $item[box of Familiar Jacks]);
+	//print("Mu Familiar Gear created for today!", "blue");
+	
+// NOTES HERE
+// luck incense gives +10 to Familiar Weight and +25% Item Drops from Monsters
+// tiny stillsuit gives +5 to Familiar Weight, +1 Familiar Experience Per Combat, +10 to Familiar Damage
 
 
 	print("Starting daily diet in...", "green");
@@ -72,10 +68,6 @@ void main() {
 		cli_execute("cast Lunch Break");
 		cli_execute("cast Summon Holiday Fun!");
 	print("Done!", "blue");
-
-
-
-
 
 
 }

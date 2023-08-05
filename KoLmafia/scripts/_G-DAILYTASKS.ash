@@ -51,6 +51,10 @@ void main() {
 		if (cli_execute("cast Acquire Rhinestones")) {}
 		if (cli_execute("cast Lunch Break")) {}
 		if (cli_execute("cast Summon Holiday Fun!")) {}
+		if (cli_execute("cast Summon Tasteful Items")) {}
+		if (cli_execute("cast Summon Kokomo Resort Pass")) {}
+		if (cli_execute("daycare item")) {}
+		if (cli_execute("use Bird-a-Day calendar")) {}
 	print("Done!", "blue");
 
 

@@ -55,10 +55,11 @@ void main() {
 		if (cli_execute("use circle drum")) {}
 		if (cli_execute("use Bird-a-Day calendar")) {}
 
-
 	print("Now activing my other script to Vote at the voting booth for me for those daily buffs.", "green");
 		if (cli_execute("VotingBooth.ash")) {}
-
-
+		
+	print("Now activing my daily shopping script.", "green");
+		if (cli_execute("_G-DAILY-SHOPPING_Aftercore.ash")) {}	
+		
 	print("All done!", "blue");
 }
